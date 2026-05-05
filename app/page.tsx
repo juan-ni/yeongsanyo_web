@@ -7,26 +7,26 @@ import Link from 'next/link';
 
 // 1. 전시 데이터 (기존과 동일)
 const exhibitionItems = [
-  { id: 'moonjar', title: '영산요: 흙의 기록', category: 'Ceramics', size: 'md:col-span-2 md:row-span-2' },
-  { id: 2, title: 'NEO-DAIN: 선비의 결', category: 'Fashion', size: 'md:col-span-1 md:row-span-1' },
-  { id: 3, title: 'Flowing Grain Study', category: 'Archive', size: 'md:col-span-1 md:row-span-2' },
-  { id: 4, title: '300장의 사투', category: 'Process', size: 'md:col-span-1 md:row-span-1' },
-  { id: 5, title: '청유의 깊이', category: 'Ceramics', size: 'md:col-span-1 md:row-span-1' },
-  { id: 6, title: 'Genderless Silhouette', category: 'Fashion', size: 'md:col-span-2 md:row-span-1' },
-  { id: 7, title: '가마의 온도', category: 'Heritage', size: 'md:col-span-1 md:row-span-2' },
-  { id: 8, title: 'Digital Craftmanship', category: 'Tech', size: 'md:col-span-2 md:row-span-2' },
-  { id: 9, title: '백자의 여백', category: 'Ceramics', size: 'md:col-span-1 md:row-span-1' },
-  { id: 10, title: 'Urban Tech-wear', category: 'Fashion', size: 'md:col-span-1 md:row-span-1' },
-  { id: 11, title: 'Pattern Logic', category: 'Design', size: 'md:col-span-1 md:row-span-2' },
-  { id: 12, title: 'Master’s Hand', category: 'Heritage', size: 'md:col-span-1 md:row-span-1' },
-  { id: 13, title: 'Fabric Texture #01', category: 'Material', size: 'md:col-span-2 md:row-span-1' },
-  { id: 14, title: 'Embedded Soul', category: 'System', size: 'md:col-span-1 md:row-span-1' },
-  { id: 15, title: '미니멀리즘의 극치', category: 'Archive', size: 'md:col-span-1 md:row-span-2' },
-  { id: 16, title: '전통의 현대적 해석', category: 'Project', size: 'md:col-span-2 md:row-span-2' },
-  { id: 17, title: 'Glaze Experiment', category: 'Process', size: 'md:col-span-1 md:row-span-1' },
-  { id: 18, title: 'The Future Art', category: 'Concept', size: 'md:col-span-1 md:row-span-1' },
-  { id: 19, title: '밤의 가마터', category: 'Mood', size: 'md:col-span-2 md:row-span-1' },
-  { id: 20, title: 'YEONGSANYO Identity', category: 'Branding', size: 'md:col-span-1 md:row-span-1' },
+  { id: 'moonjar', title: '박정규 : 열두달', category: 'Ceramics', size: 'md:col-span-2 md:row-span-2', image: '/images/moonjars.jpg' },
+  { id: 2, title: 'NEO-DAIN: 선비의 결', category: 'Fashion', size: 'md:col-span-1 md:row-span-1',image: '/images/hahyeonhui_1.png' },
+  { id: 3, title: 'Flowing Grain Study', category: 'Archive', size: 'md:col-span-1 md:row-span-2',image: '/images/ha_believe.jpeg' },
+  { id: 4, title: '300장의 사투', category: 'Process', size: 'md:col-span-1 md:row-span-1',image: '/images/insour.jpeg' },
+  { id: 5, title: '청유의 깊이', category: 'Ceramics', size: 'md:col-span-1 md:row-span-1',image: '/images/wall_flower1.png' },
+  { id: 6, title: 'Genderless Silhouette', category: 'Fashion', size: 'md:col-span-2 md:row-span-1' ,image: '/images/park_1.jpeg'},
+  { id: 7, title: '가마의 온도', category: 'Heritage', size: 'md:col-span-1 md:row-span-2',image: '/images/teaware.jpeg' },
+  { id: 8, title: 'Digital Craftmanship', category: 'Tech', size: 'md:col-span-2 md:row-span-2',image: '/images/ha_time.png' },
+  { id: 9, title: '백자의 여백', category: 'Ceramics', size: 'md:col-span-1 md:row-span-1',image: '/images/park_wave.jpeg' },
+  { id: 10, title: 'Urban Tech-wear', category: 'Fashion', size: 'md:col-span-1 md:row-span-1' ,image: '/images/ha_flower4.jpg'},
+  { id: 11, title: 'Pattern Logic', category: 'Design', size: 'md:col-span-1 md:row-span-2',image: '/images/ha_top1.jpeg' },
+  { id: 12, title: 'Master’s Hand', category: 'Heritage', size: 'md:col-span-1 md:row-span-1' ,image: '/images/ha_moonjar.jpg'},
+  { id: 13, title: 'Fabric Texture #01', category: 'Material', size: 'md:col-span-2 md:row-span-1',image: '/images/tea_carrier.jpeg' },
+  { id: 14, title: 'Embedded Soul', category: 'System', size: 'md:col-span-1 md:row-span-1' ,image: '/images/ha_and_park.jpg'},
+  { id: 15, title: '미니멀리즘의 극치', category: 'Archive', size: 'md:col-span-1 md:row-span-2' ,image: '/images/ha_flower1.png'},
+  { id: 16, title: '전통의 현대적 해석', category: 'Project', size: 'md:col-span-2 md:row-span-2' ,image: '/images/park_2.png'},
+  { id: 17, title: 'Glaze Experiment', category: 'Process', size: 'md:col-span-1 md:row-span-1' ,image: '/images/ha_flower2.png'},
+  { id: 18, title: 'The Future Art', category: 'Concept', size: 'md:col-span-1 md:row-span-1' ,image: '/images/ha_flower3.jpg'},
+  { id: 19, title: '밤의 가마터', category: 'Mood', size: 'md:col-span-2 md:row-span-1' ,image: '/images/park_teaware.png'},
+  { id: 20, title: 'YEONGSANYO Identity', category: 'Branding', size: 'md:col-span-1 md:row-span-1',image: '/images/buncheong_moonjar.jpeg' },
 ];
 
 export default function Home() {
@@ -109,7 +109,7 @@ export default function Home() {
       </AnimatePresence>
 
       {/* 3. Hero 섹션 */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+<section className="relative w-full flex aspect-video items-center justify-center overflow-hidden">
         <a href="https://www.youtube.com/watch?v=6N8l3TfOz6k" target="_blank" className="absolute inset-0 z-0">
           <div className="absolute inset-0 overflow-hidden">
             <iframe className="absolute top-1/2 left-1/2 w-[177.77vh] h-[100vh] min-w-[100vw] min-h-[56.25vw] -translate-x-1/2 -translate-y-1/2 pointer-events-none" src="https://www.youtube.com/embed/6N8l3TfOz6k?autoplay=1&mute=1&loop=1&playlist=6N8l3TfOz6k&controls=0&modestbranding=1&rel=0&playsinline=1" frameBorder="0" allow="autoplay; encrypted-media"></iframe>
@@ -126,17 +126,107 @@ export default function Home() {
           <p className="text-[10px] md:text-sm tracking-[0.5em] font-light text-zinc-400 uppercase">"Tradition meets the most sophisticated lifestyle."</p>
         </div>
       </section>
+<section className="py-24 md:py-32 bg-black text-zinc-300">
+  <div className="max-w-6xl mx-auto px-6 lg:px-8">
+    
+    {/* 섹션 타이틀 */}
+    <div className="text-center mb-16 md:mb-24">
+      <h2 className="text-sm md:text-base font-bold tracking-[0.2em] text-zinc-300 mb-4 uppercase">
+        The Artisans
+      </h2>
+      <p className="text-zinc-500 font-light text-lg md:text-xl tracking-wider">
+        영산요의 결을 빚어내는 세 사람
+      </p>
+    </div>
 
+    {/* 사진 그리드 (모바일 1줄, 데스크톱 3줄) */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
+      
+      {/* 1. 하현희 */}
+      <div className="group cursor-pointer flex flex-col items-center text-center">
+        <div className="relative w-full aspect-[3/4] overflow-hidden mb-6 bg-zinc-900">
+          <img 
+            src="/images/ha-hyeonhui.png" 
+            alt="하현희" 
+            className="w-full h-full object-cover transition-all duration-700 ease-in-out group-hover:scale-105 group-hover:grayscale-0 opacity-90 group-hover:opacity-100"
+          />
+        </div>
+        <h3 className="text-xl font-medium tracking-[0.15em] text-white mb-2">하현희</h3>
+        <p className="text-xs font-light text-zinc-500 tracking-[0.2em] uppercase">
+          Artisan {/* 역할에 맞게 수정하세요 */}
+        </p>
+      </div>
+
+      {/* 2. 박정규 (명장님) */}
+      <div className="group cursor-pointer flex flex-col items-center text-center">
+        <div className="relative w-full aspect-[3/4] overflow-hidden mb-6 bg-zinc-900">
+          <img 
+            src="/images/park-jeonggyu.png" 
+            alt="박정규" 
+            className="w-full h-full object-cover transition-all duration-700 ease-in-out group-hover:scale-105 group-hover:grayscale-0 opacity-90 group-hover:opacity-100"
+          />
+        </div>
+        <h3 className="text-xl font-medium tracking-[0.15em] text-white mb-2">박정규</h3>
+        <p className="text-xs font-light text-zinc-500 tracking-[0.2em] uppercase">
+          Ceramics Master
+        </p>
+      </div>
+
+      {/* 3. 박주안 (디렉터님) */}
+      <div className="group cursor-pointer flex flex-col items-center text-center">
+        <div className="relative w-full aspect-[3/4] overflow-hidden mb-6 bg-zinc-900">
+          <img 
+            src="/images/park-juan.png" 
+            alt="박주안" 
+            className="w-full h-full object-cover transition-all duration-700 ease-in-out group-hover:scale-105 group-hover:grayscale-0 opacity-90 group-hover:opacity-100"
+          />
+        </div>
+        <h3 className="text-xl font-medium tracking-[0.15em] text-white mb-2">박주안</h3>
+        <p className="text-xs font-light text-zinc-500 tracking-[0.2em] uppercase">
+          Brand Director
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
       {/* 4. 전시 레이아웃 */}
       <section className="py-40 px-6 max-w-7xl mx-auto">
   <div className="mb-24">
     <h2 className="text-sm tracking-[0.8em] font-light text-zinc-600 uppercase mb-4">Museum Archive</h2>
     <div className="h-px w-20 bg-zinc-800" />
   </div>
+<div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px] md:auto-rows-[300px]">
+  {exhibitionItems.map((item) => (
+    <div 
+      key={item.id} 
+      className={`relative overflow-hidden group bg-zinc-900 ${item.size}`}
+    >
+      {/* 데이터에 image가 있을 때만 이미지를 보여줍니다 */}
+      {item.image ? (
+        <img
+          src={item.image}
+          alt={item.title}
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+        />
+      ) : (
+        /* 이미지가 없는 경우를 대비한 빈 박스 (디버깅용) */
+        <div className="w-full h-full flex items-center justify-center text-zinc-700 text-xs">
+          No Image Data
+        </div>
+      )}
+      
+      {/* 오버레이 정보 */}
+      <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+        <p className="text-[10px] text-zinc-400 uppercase tracking-[0.2em] mb-1">{item.category}</p>
+        <h3 className="text-white text-base md:text-lg font-medium tracking-tight">{item.title}</h3>
+      </div>
+    </div>
+  ))}
+</div>
 
-  <div className="grid grid-cols-1 md:grid-cols-4 auto-rows-[250px] md:auto-rows-[350px] gap-4 md:gap-8">
+  {/* <div className="grid grid-cols-1 md:grid-cols-4 auto-rows-[250px] md:auto-rows-[350px] gap-4 md:gap-8">
     {exhibitionItems.map((item, index) => (
-      /* 1. Link 태그로 감싸고, item.size를 여기로 옮깁니다 */
       <Link 
         href={`/exhibition/${item.id}`} 
         key={item.id} 
@@ -147,8 +237,7 @@ export default function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: (index % 5) * 0.1, duration: 0.8 }}
           viewport={{ once: true, margin: "-50px" }}
-          /* 2. onClick은 이제 필요 없으니 지워도 됩니다 */
-          className="group relative h-full overflow-hidden bg-zinc-900 border border-white/5 cursor-pointer"
+           className="group relative h-full overflow-hidden bg-zinc-900 border border-white/5 cursor-pointer"
         >
           <div className="absolute inset-0 z-10 bg-black/40 group-hover:bg-black/10 transition-all duration-700" />
           <div className="absolute inset-0 bg-zinc-800 group-hover:scale-105 transition-transform duration-[2s]" />
@@ -159,7 +248,8 @@ export default function Home() {
         </motion.div>
       </Link>
     ))}
-  </div>
+  </div> */}
+
 </section>
 
               {/* 4. 푸터 - 박물관의 마지막 기록 */}
@@ -170,9 +260,9 @@ export default function Home() {
       {/* 브랜드 정체성 */}
       <div className="col-span-1 md:col-span-2">
         <h2 className="text-2xl font-serif tracking-[0.3em] mb-6">Yeongsanyo</h2>
-        <p className="text-gray-500 font-light leading-relaxed max-w-sm text-sm">
+        <p className="text-gray-00 font-light leading-relaxed max-w-sm text-sm">
           전통의 깊이와 현대의 기술이 교차하는 지점을 탐구합니다. <br />
-          영산요의 흙과 네오다인의 결이 만나 일상을 하나의 예술로 만듭니다.
+          영산요의 전통과 현대의 결이 만나 일상을 하나의 예술로 만듭니다.
         </p>
       </div>
 
