@@ -13,18 +13,29 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.yeongsanyo.com'),
   title: "Yeongsanyo",
   description: "Tradition meets the most sophisticated lifestyle.",
   openGraph: {
     title: '영산요 Yeongsanyo',
     description: '전통, 가장 세련된 일상이 되다.',
+    url: 'https://www.yeongsanyo.com',
+    siteName: '영산요',
     images: [
       {
-        url: 'https://www.yeongsanyo.com/images/wall_flower1.png', // public 폴더에 넣은 이미지 경로
+        url: '/images/wall_flower1.png', // metadataBase 덕분에 상대경로 가능
         width: 1200,
         height: 630,
       },
     ],
+    locale: 'ko_KR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '영산요 Yeongsanyo',
+    description: '전통, 가장 세련된 일상이 되다.',
+    images: ['/images/wall_flower1.png'],
   },
 };
 
