@@ -13,24 +13,30 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.yeongsanyo.com'),
+  // 1. 기준 URL 설정 (이게 없으면 상대 경로 이미지를 인식 못 할 때가 많습니다)
+  metadataBase: new URL('https://yeongsanyo.com'),
+  
   title: "Yeongsanyo",
   description: "Tradition meets the most sophisticated lifestyle.",
+  
   openGraph: {
     title: '영산요 Yeongsanyo',
     description: '전통, 가장 세련된 일상이 되다.',
-    url: 'https://www.yeongsanyo.com',
+    url: 'https://yeongsanyo.com',
     siteName: '영산요',
     images: [
       {
-        url: '/images/wall_flower1.png', // metadataBase 덕분에 상대경로 가능
+        url: '/images/wall_flower1.png', // metadataBase 덕분에 자동으로 절대경로로 변환됩니다.
         width: 1200,
         height: 630,
+        alt: '영산요 브랜드 이미지',
       },
     ],
     locale: 'ko_KR',
     type: 'website',
   },
+  
+  // 2. 트위터/슬랙 등에서 사용되는 카드 설정
   twitter: {
     card: 'summary_large_image',
     title: '영산요 Yeongsanyo',
