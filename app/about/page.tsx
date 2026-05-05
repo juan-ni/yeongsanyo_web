@@ -27,7 +27,7 @@ export default function AboutPage() {
               initial={{ opacity: 0 }} animate={{ opacity: 1 }}
               className="text-[10px] tracking-[0.5em] text-zinc-500 uppercase block mb-6"
             >
-              Masterpiece & Technical Wear
+              Masterpiece
             </motion.span>
             <motion.h1 
               initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
@@ -37,7 +37,7 @@ export default function AboutPage() {
             </motion.h1>
             <p className="text-[clamp(1.1rem,1.5vw,1.4rem)] text-zinc-400 font-light leading-relaxed max-w-2xl">
               영산요는 전남 무안에서 30년간 흙과 불을 다스려온 박정규 명장의 헤리티지에서 시작되었습니다. 
-              이제 주안 디렉터의 시선을 통해 그 전통의 결을 현대적인 기술(Technical Wear)로 치환합니다.
+              그 전통의 결을 현대적인 기술(Technical Wear)로 치환합니다.
             </p>
           </section>
 
@@ -54,21 +54,22 @@ export default function AboutPage() {
               
               <div>
                 <h2 className="text-[10px] tracking-[0.5em] text-blue-500 uppercase mb-8">The Symbolism</h2>
-                <h3 className="text-4xl font-serif mb-10 leading-snug">결(Grain)과 원(Circle)의 <br /> 유기적 만남.</h3>
+                <h3 className="text-4xl font-serif mb-10 leading-snug">산과 강, 그리고 그 사이를 흐르는 무한한 선</h3>
                 
                 <div className="space-y-10">
                   <div>
-                    <h4 className="text-xs font-bold tracking-widest text-zinc-300 mb-3 uppercase">01. The Infinite Circle</h4>
+                    <h4 className="text-xs font-bold tracking-widest text-zinc-300 mb-3 uppercase">01. ESSENTIAL STRUCTURE</h4>
                     <p className="text-zinc-500 font-light text-sm leading-relaxed">
-                      로고의 원형은 완벽하지 않음으로써 비로소 완성되는 '달항아리'의 실루엣을 상징합니다. 
-                      비움과 채움이 공존하는 순환의 미학을 담았습니다.
+                      영산요의 브랜드 로고는 브랜드의 이름인 '영산요'의 초성 'ㅇㅅㅇ'을 기하학적으로 형상화하여 탄생했습니다.
+                      
                     </p>
                   </div>
                   <div>
-                    <h4 className="text-xs font-bold tracking-widest text-zinc-300 mb-3 uppercase">02. The Technical Line</h4>
+                    <h4 className="text-xs font-bold tracking-widest text-zinc-300 mb-3 uppercase">02. THE UNBROKEN FLOW</h4>
                     <p className="text-zinc-500 font-light text-sm leading-relaxed">
-                      가로지르는 선은 전통 기법의 '결'이자, 테크웨어의 '심테이핑(Seam-taping)'을 형상화합니다. 
-                      과거의 흙과 미래의 소재가 교차하는 지점을 의미합니다.
+                      전면의 부드러운 곡선은 유유히 흐르는 강을, 후면의 견고한 직선은 굳건히 자리를 지키는 산을 상징합니다.
+                      이 모든 선이 하나로 이어진 무한루프(Infinity)의 형태는 과거와 현재를 잇고, 세대를 넘어
+                      이어질 영산요만의 영속적인 예술 가치를 담고 있습니다.
                     </p>
                   </div>
                 </div>
@@ -84,13 +85,13 @@ export default function AboutPage() {
                 <div>
                   <h3 className="text-[10px] tracking-[0.3em] text-white mb-4 uppercase">Authenticity</h3>
                   <p className="text-zinc-500 font-light leading-relaxed text-sm">
-                    300장의 사투, 1300도의 고온. 우리는 타협하지 않는 공정만이 진정한 가치를 만든다고 믿습니다.
+                    1250도의 고온. 예술은 타협하지 않는 공정만이 진정한 가치를 만듭니다.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-[10px] tracking-[0.3em] text-white mb-4 uppercase">Minimalism</h3>
                   <p className="text-zinc-500 font-light leading-relaxed text-sm">
-                    불필요한 장식을 걷어내고 소재와 형태 본연의 매력에 집중합니다.
+                    소재와 형태 본연의 매력에 집중합니다.
                   </p>
                 </div>
              </div>
@@ -104,11 +105,11 @@ export default function AboutPage() {
                     <p className="text-sm font-light text-zinc-500 mb-4">전라남도 무안군 영산요 가마터</p>
                     <Link href="https://map.naver.com" className="text-[10px] text-zinc-600 hover:text-white underline underline-offset-4">NAVIGATE →</Link>
                   </div>
-                  <div>
+                  {/* <div>
                     <h4 className="text-[10px] tracking-[0.2em] text-zinc-400 uppercase mb-2">Seoul Studio</h4>
                     <p className="text-sm font-light text-zinc-500 mb-4">서울특별시 마포구 디자인 스튜디오</p>
                     <Link href="https://map.kakao.com" className="text-[10px] text-zinc-600 hover:text-white underline underline-offset-4">NAVIGATE →</Link>
-                  </div>
+                  </div> */}
                 </div>
              </div>
           </section>
