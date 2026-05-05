@@ -15,6 +15,17 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Yeongsanyo",
   description: "Tradition meets the most sophisticated lifestyle.",
+  openGraph: {
+    title: '영산요 Yeongsanyo',
+    description: '21세기 선비의 감각, NEO-DAIN 프로젝트',
+    images: [
+      {
+        url: '/images/wall_flower1.jpg', // public 폴더에 넣은 이미지 경로
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
