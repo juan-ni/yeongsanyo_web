@@ -124,7 +124,7 @@ export default function Home() {
         </a>
         <div className="relative z-10 text-center px-4">
           <motion.h1 
-            className="text-[9vw] md:text-[8vw] font-serif tracking-[0.3em] whitespace-nowrap mb-4"
+            className="text-[9vw] md:text-[8vw] font-serif tracking-[0.2em] whitespace-nowrap mb-1"
           >
             YEONGSANYO
           </motion.h1>
