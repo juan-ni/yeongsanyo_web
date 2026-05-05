@@ -114,8 +114,8 @@ export default function Home() {
       </AnimatePresence>
 
       {/* 3. Hero 섹션 */}
-<section className="relative w-full flex aspect-video items-center justify-center overflow-hidden">
-        <a href="https://www.youtube.com/watch?v=6N8l3TfOz6k" target="_blank" className="absolute inset-0 z-0">
+<section className="relative w-full bg-black flex aspect-video items-center justify-center overflow-hidden">
+        <a href="https://www.youtube.com/watch?v=6N8l3TfOz6k" target="_blank" className="absolute top-20 md:top-24 left-0 right-0 bottom-0 z-0">
           <div className="absolute inset-0 overflow-hidden">
             <iframe className="absolute top-1/2 left-1/2 w-[177.77vh] h-[100vh] min-w-[100vw] min-h-[56.25vw] -translate-x-1/2 -translate-y-1/2 pointer-events-none" src="https://www.youtube.com/embed/6N8l3TfOz6k?autoplay=1&mute=1&loop=1&playlist=6N8l3TfOz6k&controls=0&modestbranding=1&rel=0&playsinline=1" frameBorder="0" allow="autoplay; encrypted-media"></iframe>
           </div>
