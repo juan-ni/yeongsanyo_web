@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: '영산요',
     images: [
       {
-        url: '/images/wall_flower1.png', // metadataBase 덕분에 자동으로 절대경로로 변환됩니다.
+        url: '/images/ha_flower_main.jpg', // metadataBase 덕분에 자동으로 절대경로로 변환됩니다.
         width: 1200,
         height: 630,
         alt: '영산요 브랜드 이미지',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '영산요 Yeongsanyo',
     description: '전통, 가장 세련된 일상이 되다.',
-    images: ['/images/wall_flower1.png'],
+    images: ['/images/ha_flower_main.jpg'],
   },
 };
 
