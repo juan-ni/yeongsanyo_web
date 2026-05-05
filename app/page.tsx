@@ -14,7 +14,7 @@ const exhibitionItems = [
   { id: 5, title: '청유의 깊이', category: 'Ceramics', size: 'md:col-span-1 md:row-span-1',image: '/images/wall_flower1.png' },
   { id: 6, title: 'Genderless Silhouette', category: 'Fashion', size: 'md:col-span-2 md:row-span-1' ,image: '/images/park_1.jpeg'},
   { id: 7, title: '가마의 온도', category: 'Heritage', size: 'md:col-span-1 md:row-span-2',image: '/images/teaware.jpeg' },
-  { id: 8, title: 'Digital Craftmanship', category: 'Tech', size: 'md:col-span-2 md:row-span-2',image: '/images/ha_time.png' },
+  { id: 8, title: 'Digital Craftmanship', category: 'Tech', size: 'md:col-span-2 md:row-span-2',image: '/images/ha_time.jpg' },
   { id: 9, title: '백자의 여백', category: 'Ceramics', size: 'md:col-span-1 md:row-span-1',image: '/images/park_wave.jpeg' },
   { id: 10, title: 'Urban Tech-wear', category: 'Fashion', size: 'md:col-span-1 md:row-span-1' ,image: '/images/ha_flower4.jpg'},
   { id: 11, title: 'Pattern Logic', category: 'Design', size: 'md:col-span-1 md:row-span-2',image: '/images/ha_top1.jpeg' },

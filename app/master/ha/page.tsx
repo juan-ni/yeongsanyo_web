@@ -19,7 +19,7 @@ export default function HaMaster() {
             <p> 시선은 도자기에 머물지 않고, 그것이 놓이는 공간의 공기까지 디자인합니다.</p>
           </div>
           <div className="aspect-[3/4] bg-zinc-900 border border-white/5 relative overflow-hidden">
-            {/* <Image src="/master-park.jpg" alt="Master Park" fill className="object-cover opacity-70" /> */}
+             <img src="/images/ha_main.jpg" alt="Ha hyeon hui" className="object-cover opacity-70" />
             <div className="absolute inset-0 flex items-center justify-center text-[10px] tracking-widest text-zinc-700">MASTER PORTRAIT</div>
         </div>
         </div>

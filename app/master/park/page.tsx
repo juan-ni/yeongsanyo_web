@@ -19,7 +19,7 @@ export default function ParkMaster() {
             <p>영산요의 설립자이자 명장으로서, 과거의 기술을 현대의 식탁 위로 올리는 작업을 지속하고 있습니다.</p>
           </div>
           <div className="aspect-[3/4] bg-zinc-900 border border-white/5 relative overflow-hidden">
-            {/* <Image src="/master-park.jpg" alt="Master Park" fill className="object-cover opacity-70" /> */}
+            <img src="/images/park_main.jpg" alt="Park jeong gyu" className="object-cover opacity-70" />
             <div className="absolute inset-0 flex items-center justify-center text-[10px] tracking-widest text-zinc-700">MASTER PORTRAIT</div>
           </div>
         </div>
