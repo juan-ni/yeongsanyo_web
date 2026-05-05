@@ -41,24 +41,28 @@ export default function Home() {
 ]
 
   return (
+    
     <main className="min-h-screen bg-[#0a0a0a] text-white overflow-x-hidden font-sans">
+      <nav className="fixed top-0 w-full z-50 flex justify-between items-center px-4 py-4 md:px-8 md:py-6 backdrop-blur-xl border-b border-white/5">
+  {/* 로고 클릭 시 최상단 이동 */}
+  {/* 1. 네비게이션 */}
       
-      {/* 1. 네비게이션 */}
-      <nav className="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-6 backdrop-blur-xl border-b border-white/5">
-        <div className="flex items-center gap-4 cursor-pointer" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
-         <div className="relative w-24 h-10 overflow-hidden"> 
-  <Image 
-    src="/logo.svg" 
-    alt="Logo" 
-    fill 
-    className="object-contain" // object-cover 대신 contain을 쓰면 이미지가 잘리지 않고 전체가 다 보여요!
-  />
-</div>
-          {/* <span className="text-lg md:text-xl font-serif tracking-[0.4em] uppercase">YEONGSANYO</span> */}
-        </div>
-
-        {/* 데스크탑 메뉴 */}
-        <div className="hidden md:flex gap-12 text-[10px] tracking-[0.3em] font-light text-zinc-500">
+  <div 
+    className="flex items-center gap-4 cursor-pointer" 
+    onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
+  >
+    {/* 부모 컨테이너 크기를 반응형으로 조절 (핵심!) */}
+    <div className="relative w-20 h-8 md:w-28 md:h-12 transition-all duration-300"> 
+      <Image 
+        src="/logo.svg" 
+        alt="Yeongsanyo Logo" 
+        fill 
+        priority // 메인 로고는 우선적으로 로딩되게 설정
+        className="object-contain" 
+      />
+    </div>
+  </div>
+<div className="hidden md:flex gap-12 text-[10px] tracking-[0.3em] font-light text-zinc-500">
           {menuLinks.map((link) => (
             <a key={link.name} href={link.href} className="hover:text-white transition-all">{link.name}</a>
           ))}
@@ -71,7 +75,8 @@ export default function Home() {
         >
           MENU
         </div>
-      </nav>
+</nav>
+      
 
       {/* 2. 모바일 메뉴 오버레이 (AnimatePresence) */}
       <AnimatePresence>
