@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: '전통, 가장 세련된 일상이 되다.',
     images: [
       {
-        url: '/images/wall_flower1.png', // public 폴더에 넣은 이미지 경로
+        url: 'https://www.yeongsanyo.com/images/wall_flower1.png', // public 폴더에 넣은 이미지 경로
         width: 1200,
         height: 630,
       },
