@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "Tradition meets the most sophisticated lifestyle.",
   openGraph: {
     title: '영산요 Yeongsanyo',
-    description: '21세기 선비의 감각, NEO-DAIN 프로젝트',
+    description: '전통, 가장 세련된 일상이 되다.',
     images: [
       {
         url: '/images/wall_flower1.jpg', // public 폴더에 넣은 이미지 경로
