@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function ParkMaster() {
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white pt-40 px-8">
-      <Link href="/" className="fixed top-28 left-8 z-50 text-[10px] tracking-[0.3em] text-zinc-500 hover:text-white transition-colors flex items-center gap-2 group">
+      <Link href="/" className="fixed top-28 left-8 z-50 text-[13px] tracking-[0.3em] text-zinc-400 hover:text-white transition-colors flex items-center gap-2 group">
   <span className="group-hover:-translate-x-1 transition-transform">←</span> 
   BACK TO MUSEUM
 </Link>
@@ -14,7 +14,7 @@ export default function ParkMaster() {
         <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-6xl md:text-8xl font-serif mt-4 mb-12">Park Jeong Gyu</motion.h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-          <div className="space-y-8 text-zinc-400 font-light leading-relaxed">
+          <div className="space-y-8 text-zinc-300 font-normal leading-relaxed">
             <p>전남 무안의 흙과 불을 다스리며 30년 넘게 전통 도자기의 길을 걷고 있습니다. 그의 손끝에서 탄생하는 달항아리는 비움과 채움의 미학을 동시에 담아냅니다.</p>
             <p>영산요의 설립자이자 명장으로서, 과거의 기술을 현대의 식탁 위로 올리는 작업을 지속하고 있습니다.</p>
           </div>

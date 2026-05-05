@@ -13,7 +13,7 @@ export default function AboutPage() {
         <Link href="/" className="flex items-center gap-4 cursor-pointer">
           <span className="text-xl font-serif tracking-[0.4em] uppercase">YEONGSANYO</span>
         </Link>
-        <Link href="/" className="text-[10px] tracking-[0.3em] text-zinc-500 hover:text-white transition-all">
+        <Link href="/" className="text-[12px] tracking-[0.3em] text-zinc-500 hover:text-white transition-all">
           CLOSE
         </Link>
       </nav>
@@ -33,9 +33,9 @@ export default function AboutPage() {
               initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
               className="text-[clamp(3rem,8vw,6rem)] font-serif leading-[1.1] mb-12 tracking-tight"
             >
-              가장 깊은 흙에서 <br /> 가장 먼 미래로.
+              전통, 가장 세련된<br /> 일상이 되다
             </motion.h1>
-            <p className="text-[clamp(1.1rem,1.5vw,1.4rem)] text-zinc-400 font-light leading-relaxed max-w-2xl">
+            <p className="text-[clamp(1.2rem,1.6vw,1.5rem)] text-zinc-400 font-light leading-relaxed max-w-2xl">
               영산요는 전남 무안에서 30년간 흙과 불을 다스려온 박정규 명장의 헤리티지에서 시작되었습니다. 
               그 전통의 결을 현대적인 기술(Technical Wear)로 치환합니다.
             </p>
@@ -53,26 +53,31 @@ export default function AboutPage() {
               </div>
               
               <div>
-                <h2 className="text-[10px] tracking-[0.5em] text-blue-500 uppercase mb-8">The Symbolism</h2>
-                <h3 className="text-4xl font-serif mb-10 leading-snug">산과 강, 그리고 그 사이를 흐르는 무한한 선</h3>
+                <h2 className="text-[14px] tracking-[0.5em] text-blue-500 uppercase mb-8">The Symbolism</h2>
+                <h3 className="text-4xl font-serif mb-10 leading-snug">산과 강, <br />그리고 그 사이를 흐르는<br /> 무한한 선</h3>
                 
-                <div className="space-y-10">
-                  <div>
-                    <h4 className="text-xs font-bold tracking-widest text-zinc-300 mb-3 uppercase">01. ESSENTIAL STRUCTURE</h4>
-                    <p className="text-zinc-500 font-light text-sm leading-relaxed">
-                      영산요의 브랜드 로고는 브랜드의 이름인 '영산요'의 초성 'ㅇㅅㅇ'을 기하학적으로 형상화하여 탄생했습니다.
-                      
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="text-xs font-bold tracking-widest text-zinc-300 mb-3 uppercase">02. THE UNBROKEN FLOW</h4>
-                    <p className="text-zinc-500 font-light text-sm leading-relaxed">
-                      전면의 부드러운 곡선은 유유히 흐르는 강을, 후면의 견고한 직선은 굳건히 자리를 지키는 산을 상징합니다.
-                      이 모든 선이 하나로 이어진 무한루프(Infinity)의 형태는 과거와 현재를 잇고, 세대를 넘어
-                      이어질 영산요만의 영속적인 예술 가치를 담고 있습니다.
-                    </p>
-                  </div>
-                </div>
+                <div>
+  {/* 소제목: 모바일 14px -> 데스크톱 16px로 상향 */}
+  <h4 className="text-sm md:text-base font-bold tracking-[0.3em] text-zinc-300 mb-4 uppercase">
+    01. ESSENTIAL STRUCTURE
+  </h4>
+  {/* 본문: 모바일 18px -> 데스크톱 20px로 확실히 키움 */}
+  <p className="text-zinc-400 font-normal text-base md:text-base leading-relaxed mb-6">
+    영산요의 브랜드 로고는 브랜드의 이름인 '영산요'의 초성 'ㅇㅅㅇ'을 기하학적으로 형상화하여 탄생했습니다.
+  </p>
+</div>
+
+<div>
+  {/* 소제목: 모바일 14px -> 데스크톱 16px */}
+  <h4 className="text-sm md:text-base font-bold tracking-[0.3em] text-zinc-300 mb-4 uppercase">
+    02. THE UNBROKEN FLOW
+  </h4>
+  {/* 본문: 모바일 18px -> 데스크톱 20px */}
+  <p className="text-zinc-400 font-normal text-base md:text-base leading-relaxed">
+    전면의 부드러운 곡선은 유유히 흐르는 강을, 후면의 견고한 직선은 굳건히 자리를 지키는 산을 상징합니다. 
+    이 모든 선이 하나로 이어진 무한루프(Infinity)의 형태는 과거와 현재를 잇고, 세대를 넘어 이어질 영산요만의 영속적인 예술 가치를 담고 있습니다.
+  </p>
+</div>
               </div>
             </div>
           </section>
@@ -83,14 +88,14 @@ export default function AboutPage() {
              <div className="space-y-12">
                 <h2 className="text-2xl font-serif mb-8">Our Credo</h2>
                 <div>
-                  <h3 className="text-[10px] tracking-[0.3em] text-white mb-4 uppercase">Authenticity</h3>
-                  <p className="text-zinc-500 font-light leading-relaxed text-sm">
+                  <h3 className="text-[14px] tracking-[0.3em] text-white mb-4 uppercase">Authenticity</h3>
+                  <p className="text-zinc-400 font-normal leading-relaxed text-base">
                     1250도의 고온. 예술은 타협하지 않는 공정만이 진정한 가치를 만듭니다.
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-[10px] tracking-[0.3em] text-white mb-4 uppercase">Minimalism</h3>
-                  <p className="text-zinc-500 font-light leading-relaxed text-sm">
+                  <h3 className="text-[14px] tracking-[0.3em] text-white mb-4 uppercase">Minimalism</h3>
+                  <p className="text-zinc-400 font-normal leading-relaxed text-base">
                     소재와 형태 본연의 매력에 집중합니다.
                   </p>
                 </div>
@@ -101,9 +106,9 @@ export default function AboutPage() {
                 <h2 className="text-2xl font-serif mb-8">Visit Us</h2>
                 <div className="space-y-8">
                   <div>
-                    <h4 className="text-[10px] tracking-[0.2em] text-zinc-400 uppercase mb-2">Muan Kiln</h4>
-                    <p className="text-sm font-light text-zinc-500 mb-4">전라남도 무안군 영산요 가마터</p>
-                    <Link href="https://map.naver.com" className="text-[10px] text-zinc-600 hover:text-white underline underline-offset-4">NAVIGATE →</Link>
+                    <h4 className="text-[14px] tracking-[0.2em] text-zinc-400 uppercase mb-2">Muan Kiln</h4>
+                    <p className="text-base font-light text-zinc-300 mb-4">전라남도 무안군 영산요 가마터</p>
+                    <Link href="https://map.naver.com" className="text-[14px] text-zinc-600 hover:text-white underline underline-offset-4">NAVIGATE →</Link>
                   </div>
                   {/* <div>
                     <h4 className="text-[10px] tracking-[0.2em] text-zinc-400 uppercase mb-2">Seoul Studio</h4>

@@ -123,7 +123,7 @@ export default function Home() {
           >
             YEONGSANYO
           </motion.h1>
-          <p className="text-[10px] md:text-sm tracking-[0.5em] font-light text-zinc-400 uppercase">Tradition Meets Technical Wear</p>
+          <p className="text-[10px] md:text-sm tracking-[0.5em] font-light text-zinc-400 uppercase">"Tradition meets the most sophisticated lifestyle."</p>
         </div>
       </section>
 
