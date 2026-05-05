@@ -202,27 +202,38 @@ export default function Home() {
     <div className="h-px w-20 bg-zinc-800" />
   </div>
 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px] md:auto-rows-[300px]">
-  {exhibitionItems.map((item) => (
+  {exhibitionItems.map((item, index: number) => (
     <div 
       key={item.id} 
       className={`relative overflow-hidden group bg-zinc-900 ${item.size}`}
     >
       {/* 데이터에 image가 있을 때만 이미지를 보여줍니다 */}
       {item.image ? (
-        <img
+        <Image
           src={item.image}
           alt={item.title}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          fill // 2. 부모의 relative 속성을 따라 꽉 채웁니다
+          className="object-cover transition-transform duration-700 group-hover:scale-110"
+          
+          // --- 성능 최적화 핵심 속성 ---
+          
+          // 3. 상단 이미지 4개는 페이지 로드 시 즉시 가져옵니다 (LCP 최적화)
+          priority={index < 4} 
+          
+          // 4. 용량을 줄이기 위해 화질을 적정 수준으로 조정합니다
+          quality={75}
+          
+          // 5. 기기별 뷰포트에 맞는 이미지 크기 힌트를 줍니다 (다운로드 용량 절감)
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
         />
       ) : (
-        /* 이미지가 없는 경우를 대비한 빈 박스 (디버깅용) */
         <div className="w-full h-full flex items-center justify-center text-zinc-700 text-xs">
           No Image Data
         </div>
       )}
       
       {/* 오버레이 정보 */}
-      <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+      <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 z-10">
         <p className="text-[10px] text-zinc-400 uppercase tracking-[0.2em] mb-1">{item.category}</p>
         <h3 className="text-white text-base md:text-lg font-medium tracking-tight">{item.title}</h3>
       </div>
