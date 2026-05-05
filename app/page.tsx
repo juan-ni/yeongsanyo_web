@@ -52,7 +52,7 @@ export default function Home() {
     onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
   >
     {/* 부모 컨테이너 크기를 반응형으로 조절 (핵심!) */}
-    <div className="relative w-20 h-8 md:w-28 md:h-12 transition-all duration-300"> 
+    <div className="relative w-15 h-6 md:w-28 md:h-12 transition-all duration-300"> 
       <Image 
         src="/logo.svg" 
         alt="Yeongsanyo Logo" 
@@ -115,7 +115,7 @@ export default function Home() {
 
       {/* 3. Hero 섹션 */}
 <section className="relative w-full bg-black flex aspect-video items-center justify-center overflow-hidden">
-        <a href="https://www.youtube.com/watch?v=6N8l3TfOz6k" target="_blank" className="absolute top-20 md:top-24 left-0 right-0 bottom-0 z-0">
+        <a href="https://www.youtube.com/watch?v=6N8l3TfOz6k" target="_blank" className="absolute top-10 md:top-10 left-0 right-0 bottom-0 z-0">
           <div className="absolute inset-0 overflow-hidden">
             <iframe className="absolute top-1/2 left-1/2 w-[177.77vh] h-[100vh] min-w-[100vw] min-h-[56.25vw] -translate-x-1/2 -translate-y-1/2 pointer-events-none" src="https://www.youtube.com/embed/6N8l3TfOz6k?autoplay=1&mute=1&loop=1&playlist=6N8l3TfOz6k&controls=0&modestbranding=1&rel=0&playsinline=1" frameBorder="0" allow="autoplay; encrypted-media"></iframe>
           </div>
