@@ -18,7 +18,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: '영산요 Yeongsanyo',
     description: '전통, 가장 세련된 일상이 되다.',
-    images:  '/images/wall_flower1.png', // public 폴더에 넣은 이미지 경로 
+    images: [
+      {
+        url: '/images/wall_flower1.png', // public 폴더에 넣은 이미지 경로
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 
