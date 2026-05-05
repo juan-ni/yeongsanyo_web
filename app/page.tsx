@@ -37,7 +37,7 @@ export default function Home() {
   { name: 'ABOUT', href: '/about' }, // 메인 페이지 아카이브 섹션으로 이동
   { name: 'Park Jeong Gyu', href: '/master/park' },
   { name: 'Ha Hyeon Hui', href: '/master/ha' },
-  { name: 'SHOP', href: 'https://shop.yeongsanyo.com' } // 실제 주소로 교체
+  { name: 'SHOP', href: 'https://yeongsanyo.shop' } // 실제 주소로 교체
 ]
 
   return (
