@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link';
-
+<meta name="naver-site-verification" content="af308b016a3c380e33993162182766ce8b12be0e" />
 // 1. 전시 데이터 (기존과 동일)
 const exhibitionItems = [
   { id: 'moonjar', title: '박정규 : 열두달', category: 'Ceramics', size: 'md:col-span-2 md:row-span-2', image: '/images/moonjars.jpg' },
