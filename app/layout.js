@@ -1,11 +1,11 @@
 // app/layout.js
 
 export const metadata = {
-  title: '영산요 | 전통, 가장 세련된 일상이 되다', //
-  description: '박주안 디렉터가 빚어낸 전통과 현대의 유기적 만남, 영산요 디지털 전시관', //
+  title: '영산요 (Yeongsanyo)', //
+  description: '전통, 가장 세련된 일상이 되다', //
   openGraph: {
     title: '영산요 (Yeongsanyo)',
-    description: '강과 산의 기운을 담은 무한의 미학',
+    description: '전통, 가장 세련된 일상이 되다',
     url: 'https://yeongsanyo.com',
     siteName: '영산요',
     images: [
