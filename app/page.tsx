@@ -4,7 +4,6 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link';
-<meta name="naver-site-verification" content="af308b016a3c380e33993162182766ce8b12be0e" />
 // 1. 전시 데이터 (기존과 동일)
 const exhibitionItems = [
   { id: 'moonjar', title: '박정규 : 열두달', category: 'Ceramics', size: 'md:col-span-2 md:row-span-2', image: '/images/moonjars.jpg' },
@@ -41,7 +40,6 @@ export default function Home() {
 ]
 
   return (
-    
     <main className="min-h-screen bg-[#0a0a0a] text-white overflow-x-hidden font-sans">
       <nav className="fixed top-0 w-full z-50 flex justify-between items-center px-4 py-4 md:px-8 md:py-6 backdrop-blur-xl border-b border-white/5">
   {/* 로고 클릭 시 최상단 이동 */}
