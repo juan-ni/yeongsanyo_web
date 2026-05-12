@@ -204,6 +204,7 @@ export default function Home() {
     <div 
       key={item.id} 
       className={`relative overflow-hidden group bg-zinc-900 ${item.size}`}
+      onClick={() => setSelectedItem(item)}
     >
       {/* 데이터에 image가 있을 때만 이미지를 보여줍니다 */}
       {item.image ? (
