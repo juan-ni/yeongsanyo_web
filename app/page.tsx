@@ -109,7 +109,17 @@ export default function Page() {
       </AnimatePresence>
 
       {/* Hero 섹션 */}
-      <section className="relative w-full bg-black flex aspect-video items-center justify-center overflow-hidden">
+      {/* 3. Hero 섹션 */}
+      <section className="relative w-full bg-black flex aspect-video items-center justify-center overflow-hidden group">
+        {/* 1. 영상 전체 영역을 클릭하면 유튜브로 이동하게 하는 투명 링크 레이어 */}
+        <Link 
+          href="https://www.youtube.com/watch?v=6N8l3TfOz6k" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="absolute inset-0 z-20 cursor-pointer"
+          aria-label="영산요 유튜브 영상 보기"
+        />
+
         <div className="absolute top-0 left-0 w-full h-full z-0">
           <div className="absolute inset-0 overflow-hidden">
             <iframe 
@@ -122,8 +132,13 @@ export default function Page() {
           <div className="absolute inset-0 bg-black/50" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_0%,_#0a0a0a_90%)]" />
         </div>
-        <div className="relative z-10 text-center px-4">
-          <motion.h1 className="text-[9vw] md:text-[8vw] font-serif tracking-[0.2em] whitespace-nowrap mb-1">
+
+        {/* 2. 중앙 텍스트 (z-10으로 설정하여 링크보다 아래에 두거나, 
+           pointer-events-none을 주어 클릭이 링크 레이어로 통과되게 합니다) */}
+        <div className="relative z-10 text-center px-4 pointer-events-none">
+          <motion.h1 
+            className="text-[9vw] md:text-[8vw] font-serif tracking-[0.2em] whitespace-nowrap mb-1"
+          >
             YEONGSANYO
           </motion.h1>
           <p className="text-[10px] md:text-sm tracking-[0.5em] font-light text-zinc-400 uppercase">
