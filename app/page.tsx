@@ -23,7 +23,7 @@ const exhibitionItems = [
   { id: 13, title: '숨쉬는 이중차호', category: 'Ceramics', size: 'md:col-span-2 md:row-span-1',image: '/images/tea_carrier.jpeg', description: '박정규 명장의 이중차호는 흙가마에서 오직 나무로만 1250도 고온의 불길에서 탄생합니다. 숙성차를 더 깊고 오래 즐기실 수 있습니다. ' },
   { id: 14, title: '분청철화어문편병', category: 'Ceramics', size: 'md:col-span-1 md:row-span-1' ,image: '/images/ha_and_park.jpg', description: '두 작가의 협업작품으로 박정규 명장은 형태를 하현희 작가는 철화어문을 담았습니다.' },
   { id: 15, title: '기적', category: 'Ceramics', size: 'md:col-span-1 md:row-span-2' ,image: '/images/ha_flower1.png', description: '하현희 작가의 작품으로 간절하면 돌과 흙에서도 꽃이 핀다는 의미를 담고 있습니다.' },
-  { id: 16, title: '전통의 현대적 해석', category: 'Ceramics', size: 'md:col-span-2 md:row-span-2' ,image: '/images/park_2.png', description: '' },
+  { id: 16, title: '분청당초문박지대발', category: 'Ceramics', size: 'md:col-span-2 md:row-span-2' ,image: '/images/park_2.png', description: '박정규 명장의 작품으로 끊이지 않는 당초문을 대발에 조각하여 우리들처럼 연결된 모습을 표현하였습니다.' },
   { id: 17, title: '석탑의 균형', category: 'Ceramics', size: 'md:col-span-1 md:row-span-1' ,image: '/images/ha_flower2.png', description: '하현희 작가의 작품으로 반듯한 탑이 아닌 형태를 띄고 있습니다. 완벽하지 않더라도 그자체의 아름다움을 표현하여 우리의 삶을 표현하였습니다.' },
   { id: 18, title:'어디에서도', category: 'Ceramics', size: 'md:col-span-1 md:row-span-1' ,image: '/images/ha_flower3.jpg', description: '병,잔,그릇 어디에 둬도 꽃을 꽂을 수 있는 작품으로 어디에서든 자신의 할 일을 다해낼 수 있다는 용기를 담은 작품입니다.' },
   { id: 19, title: '농차세트', category: 'Ceramics', size: 'md:col-span-2 md:row-span-1' ,image: '/images/park_teaware.png', description: '한 방울씩 떨어지지만 그 맛과 향은 진하고 여운이 있는 농차를 즐길 수 있는 세트입니다.' },
