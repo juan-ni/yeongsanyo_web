@@ -251,8 +251,7 @@ export default function Page() {
             <div className="col-span-1 md:col-span-2">
               <h2 className="text-2xl font-serif tracking-[0.3em] mb-6">Yeongsanyo</h2>
               <p className="text-gray-400 font-light leading-relaxed max-w-sm text-sm">
-                전통의 깊이와 현대의 기술이 교차하는 지점을 탐구합니다. <br />
-                영산요의 전통과 현대의 결이 만나 일상을 하나의 예술로 만듭니다.
+                전통, 가장 세련된 일상이 되다
               </p>
             </div>
             <div>
