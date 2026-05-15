@@ -7,6 +7,11 @@ const nextConfig = {
         destination: '/', // 혹은 https://yeongsanyo.shop
         permanent: true,
       },
+      {
+        source: '/shop',
+        destination: 'https://yeongsanyo.shop', // 혹은 https://yeongsanyo.shop
+        permanent: true,
+      },
     ]
   },
 }
