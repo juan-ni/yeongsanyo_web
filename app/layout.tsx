@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   // 1. 기준 URL 설정 (이게 없으면 상대 경로 이미지를 인식 못 할 때가 많습니다)
   metadataBase: new URL('https://yeongsanyo.com'),
   
-  title: "Yeongsanyo",
+  title: "영산요 Yeongsanyo",
   description: "Tradition meets the most sophisticated lifestyle.",
   
   openGraph: {
