@@ -139,7 +139,7 @@ export default function Page() {
           <motion.h1 
             className="text-[9vw] md:text-[8vw] font-serif tracking-[0.2em] whitespace-nowrap mb-1"
           >
-            영산요 YEONGSANYO
+            YEONGSANYO
           </motion.h1>
           <p className="text-[10px] md:text-sm tracking-[0.5em] font-light text-zinc-400 uppercase">
             "Tradition meets the most sophisticated lifestyle."
@@ -249,7 +249,7 @@ export default function Page() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
             <div className="col-span-1 md:col-span-2">
-              <h2 className="text-2xl font-serif tracking-[0.3em] mb-6">영산요 Yeongsanyo</h2>
+              <h2 className="text-2xl font-serif tracking-[0.3em] mb-6"> 영산요 Yeongsanyo</h2>
               <p className="text-gray-400 font-light leading-relaxed max-w-sm text-sm">
                 전통, 가장 세련된 일상이 되다
               </p>
