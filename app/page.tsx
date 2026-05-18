@@ -6,6 +6,8 @@ import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link';
 import { desc } from 'framer-motion/client';
 
+
+
 // 1. 전시 데이터 (함수 밖으로 이동하여 관리하기 편하게 함)
 const exhibitionItems = [
   { id: 'moonjar', title: '열두달', category: 'Ceramics', size: 'md:col-span-2 md:row-span-2', image: '/images/moonjars.jpg', description: '박정규 명장의 손끝에서 탄생한 달항아리 시리즈입니다. 열두 달의 변화하는 시간을 흙의 질감과 곡선으로 표현하여 절제된 미학을 보여줍니다.' },
