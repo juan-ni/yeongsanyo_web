@@ -1,17 +1,22 @@
-// app/sitemap.ts
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://yeongsanyo.com'
+  const currentDate = new Date()
 
-  // 만약 동적 페이지(예: /products/1)가 있다면 여기서 fetch 후 추가
-  // 지금은 메인 페이지를 기준으로 작성합니다.
-  return [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 1,
-    },
+  // 영산요의 주요 메뉴 주소들을 배열로 정의합니다.
+  // 프로젝트 구조에 맞게 경로(about, products 등)를 수정해서 사용하세요.
+  const routes = [
+    { url: '', changeFrequency: 'daily', priority: 1.0 },          // 메인 페이지
+    { url: '/about', changeFrequency: 'monthly', priority: 0.8 },     // 브랜드 소개
+    { url: '/products', changeFrequency: 'weekly', priority: 0.9 },   // 작품/상품 리스트
+    { url: '/contact', changeFrequency: 'monthly', priority: 0.5 },   // 문의/오시는 길
   ]
+
+  return routes.map((route) => ({
+    url: `${baseUrl}${route.url}`,
+    lastModified: currentDate,
+    changeFrequency: route.changeFrequency as 'daily' | 'weekly' | 'monthly',
+    priority: route.priority,
+  }))
 }
